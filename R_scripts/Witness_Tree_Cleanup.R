@@ -27,7 +27,7 @@ library(cowplot)
 #------------------------
 #read in witness tree data
 #------------------------
-wit <- read.csv("/Users/charlotteuden/Desktop/trees/Historic_Fire_New_England/data/witness_trees/583NewEngland%.csv") #raw from charlie cogbill
+wit <- read.csv("../data/witness_trees/583NewEngland%.csv") #raw from charlie cogbill
 #use Trees column to get total tree count for each data point
 wit <- mutate(wit, Beech=Beech*Trees, Maples=Maples*Trees, Birches=Birches*Trees,Ashs=Ashs*Trees, Hemlock=Hemlock*Trees, Basswood=Basswood*Trees, Elms=Elms*Trees, Pines=Pines*Trees, Hickories=Hickories*Trees, Spruces=Spruces*Trees, Fir=Fir*Trees, Cedar=Cedar*Trees, Oaks=Oaks*Trees, Chestnut=Chestnut*Trees, Ironwoods=Ironwoods*Trees, Poplars=Poplars*Trees, Tamarack=Tamarack*Trees, Cherries=Cherries*Trees, Chamae.is=Chamae.is*Trees, Nyssa=Nyssa*Trees, Juglans=Juglans*Trees, Buttonwood=Buttonwood*Trees, Liriodendron=Liriodendron*Trees, Magnolia=Magnolia*Trees)
 
@@ -100,6 +100,6 @@ wit = mutate(wit, BNT=BNT/Total, BNI=BNI/Total, TBT=TBT/Total, BBI=BBI/Total, TB
 
 head(wit)
 
-write.csv(wit, "/Users/charlotteuden/Desktop/trees/Historic_Fire_New_England/data/witness_trees/witness_treees_PFTs.csv")
+write.csv(wit, "../data/witness_trees/witness_treees_PFTs.csv")
 
 
