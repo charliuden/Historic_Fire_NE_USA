@@ -114,10 +114,11 @@ for (i in 1:length(dbh_list)){
 dbh_list=seq(5, 30, 5)
 fli=seq(0, 8000, by = 1000)
 
-seeder = 0.1
-sprouter = 3
+seeder = 3
+sprouter = 0.5
 
 res = sprouter
+
 
 df <- data.frame(P_survival_TB=as.numeric(),
                  FLI=as.numeric(),
