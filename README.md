@@ -34,6 +34,22 @@ To test the model’s ability to predict modern forests, output from LPJ-GUESS w
 Model output was validated using three datasets, representing the entire course of our model run. Forest inventory and analysis (FIA), a national forest census compiled by the united states forest service, provides a comparison for present-day composition. Witness tree data recorded by surveyors to mark property boundaries offers a window into species composition at the time of European settlement (1623-1850). These records still exist today as town proprietor data and has been collected by Charlie Cogbill (Codbill 2002). Finally, pollen and charcoal data taken from Neotoma Paleoecology database offer an indication of species composition and fire frequencies over the last 1200 years (the length of the model run). 
 
 
+## Current Analysis: 
+Building TBIR has been a a lengthy task. Below is a figure showing response of fire survial probability given two tactics for dispursal, fire line intensity (kw/m), and stem diameter. 
+
+![seeders_sprouters_BLAZE.png](https://github.com/charliuden/kickstarter-analysis/blob/main/readme_images/seeders_sprouters_BLAZE.png)
+
+Given the way that seeders and sprouters are represented in the fire model, BLAZE, we can assume the following? 
+
+Prediction 1: when fires are frequent, they are less hot
+Prediction 2: With more frequent fires, TBIR density goes up, age goes down, and dbh goes down
+Prediction 3: If TBI fire survival is lower at small DBH’s and low fire line intensity, then mean age and diameter will decrease with more frequent/cooler fires. Density will increase. 
+Prediction 4: when fires are frequent, TBIR will dominate. 
+
+![seeders_sprouters_outcomes.png](https://github.com/charliuden/kickstarter-analysis/blob/main/readme_images/seeders_sprouters_outcomes.png)
+
+While predictions 1-3 align with the model's behavior, prediction 4 is still not seen in our output. TBIR does not dominate when fires are frequent. 
+
 
 
 
