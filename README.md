@@ -37,7 +37,7 @@ Model output was validated using three datasets, representing the entire course 
 ## Current Analysis: 
 Building TBIR has been a a lengthy task. Below is a figure showing response of fire survial probability given two tactics for dispursal, fire line intensity (kw/m), and stem diameter. 
 
-![seeders_sprouters_BLAZE.png](https://github.com/charliuden/kickstarter-analysis/blob/main/readme_images/seeders_sprouters_BLAZE.png)
+![seeders_sprouters_BLAZE.png](https://github.com/charliuden/Historic_Fire_NE_USA/blob/main/readme_images/seeders_sprouters_BLAZE.png)
 
 Given the way that seeders and sprouters are represented in the fire model, BLAZE, we can assume the following? 
 
@@ -46,7 +46,7 @@ Prediction 2: With more frequent fires, TBIR density goes up, age goes down, and
 Prediction 3: If TBI fire survival is lower at small DBH’s and low fire line intensity, then mean age and diameter will decrease with more frequent/cooler fires. Density will increase. 
 Prediction 4: when fires are frequent, TBIR will dominate. 
 
-![seeders_sprouters_outcomes.png](https://github.com/charliuden/kickstarter-analysis/blob/main/readme_images/seeders_sprouters_outcomes.png)
+![seeders_sprouters_outcomes.png](https://github.com/charliuden/Historic_Fire_NE_USA/blob/main/readme_images/seeders_sprouters_outcomes.png)
 
 While predictions 1-3 align with the model's behavior, prediction 4 is still not seen in our output. TBIR does not dominate when fires are frequent. 
 
